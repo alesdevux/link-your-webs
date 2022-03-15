@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  @apply hidden;
+}
+
 .link {
-  @apply w-full bg-white rounded-sm px-4 py-2 border-2 border-transparent hover:bg-slate-200 transition-all duration-200;
+  @apply w-full bg-white bg-opacity-75 rounded-sm px-4 py-2 border-[3px] border-transparent hover:bg-opacity-100 transition-all duration-300;
+}
+
+.focus {
+  @apply border-yellow-400 hover:bg-yellow-400;
 }
